@@ -1,0 +1,193 @@
+/* Deployed page: https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/cheese.html */
+
+@import url("variables.css");
+
+/*
+  The assignment requires @import for this file split.
+  In production, a <link> is preferred because the browser can discover the
+  stylesheet earlier; @import can delay loading and cause unstyled content.
+*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--page-background);
+  color: var(--text-color);
+  font-family: var(--font-stack);
+  line-height: 1.5;
+}
+
+header {
+  width: 90%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 2rem 0 1rem;
+}
+
+main {
+  width: 90%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+body > footer {
+  width: 90%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 1rem 0 2rem;
+  border-top: 1px solid var(--accent-color);
+  color: var(--text-color);
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-style: italic;
+}
+
+h2 {
+  margin-bottom: 0.6rem;
+  color: var(--text-color);
+  font-size: 1.35rem;
+  font-style: italic;
+}
+
+header p {
+  margin-top: 0.2rem;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+}
+
+article > p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section p {
+  margin-bottom: 1rem;
+}
+
+[lang] {
+  font-style: italic;
+}
+
+html[lang] {
+  font-style: normal;
+}
+
+.latin-term {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+dt {
+  margin-top: 1rem;
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+dt + dd {
+  margin-left: 1rem;
+  padding-left: 1em;
+  border-left: 1px solid var(--accent-color);
+}
+
+#warning {
+  padding: 1em;
+  border: 2px solid var(--accent-color);
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+blockquote {
+  margin-top: 1rem;
+  padding: 1em 1.25em;
+  border-left: 0.25rem solid var(--accent-color);
+  background: var(--soft-accent);
+}
+
+blockquote > p {
+  font-style: italic;
+}
+
+blockquote > p::before {
+  content: "“";
+  color: var(--accent-color);
+}
+
+blockquote footer {
+  margin-top: 0.75rem;
+  color: var(--text-color);
+  font-size: 0.75rem;
+}
+
+fieldset {
+  margin-bottom: 0.75rem;
+  padding: 1em;
+  border: 1px solid var(--accent-color);
+  background: var(--page-background);
+}
+
+legend {
+  padding: 0 0.25em;
+  font-style: italic;
+}
+
+fieldset p {
+  margin: 0.5rem 0;
+}
+
+input[type="checkbox"] + label {
+  padding: 0.2em 0.4em;
+}
+
+input[type="checkbox"]:checked + label {
+  background: var(--soft-accent);
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+[type="text"] {
+  max-width: 100%;
+  padding: 0.45em;
+  border: 1px solid var(--accent-color);
+  background: var(--page-background);
+  color: var(--text-color);
+}
+
+input,
+button {
+  font-family: var(--font-stack);
+}
+
+button {
+  padding: 0.45em 0.7em;
+  border: 1px solid var(--accent-color);
+  background: var(--accent-color);
+  color: var(--page-background);
+  font-weight: 700;
+}
+
+a {
+  color: var(--accent-color);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
+input:focus,
+button:focus {
+  outline: 3px solid var(--text-color);
+}
