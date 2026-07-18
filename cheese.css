@@ -1,13 +1,4 @@
-/* Deployed page: https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/cheese.html */
-
 @import url("variables.css");
-
-/*
-  The assignment requires @import for this file split.
-  In production, a <link> is preferred because the browser can discover the
-  stylesheet earlier; @import can delay loading and cause unstyled content.
-*/
-
 * {
   margin: 0;
   box-sizing: border-box;
